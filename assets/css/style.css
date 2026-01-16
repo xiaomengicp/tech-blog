@@ -112,6 +112,27 @@ header.site-header {
   margin-top: calc(var(--space-unit) * 1);
 }
 
+.site-nav {
+  display: flex;
+  gap: calc(var(--space-unit) * 1.5);
+}
+
+.site-nav a {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 0.125rem;
+  transition: all 0.2s ease;
+}
+
+.site-nav a:hover {
+  color: var(--text-primary);
+  border-bottom-color: var(--accent);
+}
+
 .theme-toggle {
   background: none;
   border: 1px solid var(--border);
@@ -421,6 +442,67 @@ article.post {
 }
 
 /* ==========================================
+   Archive Page
+   ========================================== */
+
+.archive-year {
+  margin-bottom: calc(var(--space-unit) * 3);
+}
+
+.archive-year h2 {
+  font-size: 1.5rem;
+  margin-bottom: calc(var(--space-unit) * 1.5);
+  color: var(--text-primary);
+  border-bottom: 2px solid var(--border);
+  padding-bottom: calc(var(--space-unit) * 0.5);
+}
+
+.archive-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.archive-item {
+  display: flex;
+  align-items: baseline;
+  gap: calc(var(--space-unit) * 1);
+  margin-bottom: calc(var(--space-unit) * 1);
+  padding-bottom: calc(var(--space-unit) * 1);
+  border-bottom: 1px solid var(--border);
+}
+
+.archive-item:last-child {
+  border-bottom: none;
+}
+
+.archive-item time {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: var(--text-tertiary);
+  min-width: 4rem;
+  flex-shrink: 0;
+}
+
+.archive-item a {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 500;
+  flex-grow: 1;
+}
+
+.archive-tags {
+  display: flex;
+  gap: 0.375rem;
+  flex-wrap: wrap;
+}
+
+.archive-tags .post-tag {
+  font-size: 0.75rem;
+  padding: 0.125rem 0.375rem;
+}
+
+/* ==========================================
    Responsive Design
    ========================================== */
 
@@ -433,6 +515,17 @@ article.post {
     padding: 0 calc(var(--space-unit) * 1.5);
   }
   
+  .header-controls {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: calc(var(--space-unit) * 1);
+  }
+  
+  .site-nav {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  
   .post-title {
     font-size: 2rem;
   }
@@ -443,6 +536,16 @@ article.post {
   
   h2 {
     font-size: 1.5rem;
+  }
+  
+  .archive-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: calc(var(--space-unit) * 0.5);
+  }
+  
+  .archive-item time {
+    min-width: auto;
   }
 }
 

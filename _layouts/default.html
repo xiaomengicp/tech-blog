@@ -25,6 +25,11 @@
       <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
       <p class="site-description">{{ site.description }}</p>
       <div class="header-controls">
+        <nav class="site-nav">
+          <a href="{{ '/' | relative_url }}">Home</a>
+          <a href="{{ '/archive' | relative_url }}">Archive</a>
+          <a href="{{ '/about' | relative_url }}">About</a>
+        </nav>
         <button id="theme-toggle" class="theme-toggle">🌙 Dark</button>
       </div>
     </header>
