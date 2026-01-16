@@ -1,0 +1,110 @@
+---
+layout: default
+---
+
+<!-- Tag Filter -->
+{% assign all_tags = site.posts | where: "published", true | map: "tags" | join: "," | split: "," | uniq | sort %}
+{% if all_tags.size > 0 %}
+<div class="tag-filter">
+  <span class="tag-filter-label">标签筛选</span>
+  <ul class="tag-list">
+    <li><a href="#all" class="post-tag active" data-tag="all">全部</a></li>
+    {% for tag in all_tags %}
+    <li><a href="#{{ tag | slugify }}" class="post-tag" data-tag="{{ tag | slugify }}">#{{ tag }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+<!-- Post List -->
+<div class="post-list">
+  {% assign published_posts = site.posts | where: "published", true %}
+  
+  {% if published_posts.size == 0 %}
+  <p style="color: var(--text-tertiary); text-align: center; margin: 4rem 0;">
+    还没有发布的文章。<br>
+    在 Obsidian 中写作，设置 <code>published: true</code> 后推送到 GitHub 即可发布。
+  </p>
+  {% else %}
+    {% for post in published_posts %}
+    <article class="post-item" data-tags="{% for tag in post.tags %}{{ tag | slugify }} {% endfor %}">
+      <div class="post-meta">
+        <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">
+          {{ post.date | date: "%Y年%m月%d日" }}
+        </time>
+        {% if post.tags %}
+        <div class="post-tags">
+          {% for tag in post.tags %}
+          <a href="#{{ tag | slugify }}" class="post-tag">#{{ tag }}</a>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+      
+      <a href="{{ post.url | relative_url }}" class="post-title-link">
+        {{ post.title }}
+      </a>
+      
+      {% if post.excerpt %}
+      <div class="post-excerpt">
+        {{ post.excerpt | strip_html | truncatewords: 50 }}
+      </div>
+      {% endif %}
+    </article>
+    {% endfor %}
+  {% endif %}
+</div>
+
+<!-- Tag Filter Script -->
+<script>
+(function() {
+  const tagLinks = document.querySelectorAll('[data-tag]');
+  const posts = document.querySelectorAll('.post-item');
+  
+  if (tagLinks.length === 0 || posts.length === 0) return;
+  
+  // Check URL hash on load
+  function applyFilterFromHash() {
+    const hash = window.location.hash.slice(1);
+    if (!hash) return;
+    
+    const targetTag = document.querySelector(`[data-tag="${hash}"]`);
+    if (targetTag) {
+      filterByTag(hash);
+      updateActiveTag(targetTag);
+    }
+  }
+  
+  function filterByTag(tag) {
+    posts.forEach(post => {
+      if (tag === 'all') {
+        post.style.display = '';
+      } else {
+        const postTags = post.getAttribute('data-tags');
+        post.style.display = postTags.includes(tag) ? '' : 'none';
+      }
+    });
+  }
+  
+  function updateActiveTag(activeLink) {
+    tagLinks.forEach(link => link.classList.remove('active'));
+    activeLink.classList.add('active');
+  }
+  
+  tagLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const tag = link.getAttribute('data-tag');
+      filterByTag(tag);
+      updateActiveTag(link);
+      window.history.pushState(null, null, `#${tag}`);
+    });
+  });
+  
+  // Apply filter on page load if hash exists
+  applyFilterFromHash();
+  
+  // Handle browser back/forward
+  window.addEventListener('hashchange', applyFilterFromHash);
+})();
+</script>
