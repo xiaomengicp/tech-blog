@@ -6,6 +6,7 @@ tags:
   - AI
   - psychoanalysis
 published: true
+excerpt: Technology matters not only because of what it makes possible, but because of what it asks us to hold, to refuse, and to return to.
 ---
 > Technology matters not only because of what it makes possible, but because of what it asks us to hold, to refuse, and to return to.
 
