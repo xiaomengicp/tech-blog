@@ -15,7 +15,7 @@ permalink: /about/
     <h2>Contact</h2>
     <p>Feel free to reach out:</p>
     <ul>
-      <li>Website: <a href="hekukaixin.com">hekukaixin.com</a></li>
+      <li>Website: <a href="https://hekukaixin.com">hekukaixin.com</a></li>
       <li>Email: <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
       <li>GitHub: <a href="https://github.com/xiaomengicp" target="_blank">@xiaomengicp</a></li>
     </ul>
