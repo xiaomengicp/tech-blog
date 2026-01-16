@@ -3,6 +3,8 @@ title: A Working Manifesto
 date: 2026-01-16
 tags:
   - reflection
+  - AI
+  - psychoanalysis
 published: true
 ---
 I only began working consistently with AI-assisted programming after 2026. What caught me off guard wasn’t how much faster things became, but how quickly the work started to feel heavier in a different way. There’s a quiet assumption circulating right now—rarely stated outright—that because AI systems don’t seem to have obvious limits, our work should begin to resemble that limitlessness as well. But whatever AI can do, we remain embodied. We still get tired. Our attention frays. Our bodies register cost long before our tools do. The fact that something can now be done doesn’t automatically mean it needs to be done, or done immediately, or done by us at all.
