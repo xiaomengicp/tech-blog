@@ -1,19 +1,19 @@
 # Site settings
-title: Tech Notes
-description: 技术笔记与思考
+title: Secret Build
+description: A Psychoanalytic Vibe Coder
 baseurl: "" # 如果部署在子目录，填写如 "/tech-blog"
 url: "" # 你的 GitHub Pages URL，如 "https://yourusername.github.io"
 
 # Author
 author:
   name: Jo
-  email: your.email@example.com
+  email: xiaomeng.qiao.ayame9joe@gmail.com
 
 # Build settings
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
 timezone: America/New_York
-excerpt_separator: <!--more-->
+excerpt_separator: "<!-- excerpt-end -->" # 只有明确写这个标记才会有摘要
 
 # Collections
 collections:
@@ -44,3 +44,4 @@ defaults:
     values:
       layout: "post"
       published: false  # 默认为草稿，需要显式设置 published: true
+      excerpt: ""  # 默认不生成摘要
