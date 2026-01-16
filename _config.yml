@@ -1,18 +1,19 @@
 # Site settings
-title: Secret Build
-description: A Psychoanalytic Coder
-baseurl: "/tech-blog" # 如果部署在子目录，填写如 "/tech-blog"
-url: "https://xiaomengicp.github.io" # 你的 GitHub Pages URL，如 "https://yourusername.github.io"
+title: Tech Notes
+description: 技术笔记与思考
+baseurl: "" # 如果部署在子目录，填写如 "/tech-blog"
+url: "" # 你的 GitHub Pages URL，如 "https://yourusername.github.io"
 
 # Author
 author:
   name: Jo
-  email: xiaomeng.qiao.ayame9joe@gmail.com
+  email: your.email@example.com
 
 # Build settings
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
 timezone: America/New_York
+excerpt_separator: <!--more-->
 
 # Collections
 collections:

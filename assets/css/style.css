@@ -16,12 +16,11 @@
   --border: #e5e7eb;
   --shadow: rgba(0, 0, 0, 0.04);
   
-/* Typography – refined & warm */
-
---font-serif: 'EB Garamond', 'Noto Serif SC', 'Source Han Serif SC', serif;
---font-sans: 'Inter', -apple-system, BlinkMacSystemFont,
-              'Noto Sans SC', 'PingFang SC', sans-serif;
---font-mono: 'JetBrains Mono', 'SF Mono', monospace;
+  /* Typography */
+  --font-serif: 'Crimson Pro', 'Noto Serif SC', 'Source Han Serif SC', serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans SC', sans-serif;
+  --font-mono: 'SF Mono', 'Consolas', 'Monaco', monospace;
+  
   /* Spacing */
   --space-unit: 1rem;
   --content-width: 680px;
@@ -532,7 +531,7 @@ article.post {
 
 @media (max-width: 768px) {
   html {
-    font-size: 15px;
+    font-size: 17px;
   }
   
   .container {
