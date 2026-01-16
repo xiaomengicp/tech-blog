@@ -22,16 +22,18 @@
 <body>
   <div class="container">
     <header class="site-header">
-      <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
-      <p class="site-description">{{ site.description }}</p>
-      <div class="header-controls">
-        <nav class="site-nav">
-          <a href="{{ '/' | relative_url }}">Home</a>
-          <a href="{{ '/archive' | relative_url }}">Archive</a>
-          <a href="{{ '/about' | relative_url }}">About</a>
-        </nav>
+      <div class="site-header-top">
+        <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
         <button id="theme-toggle" class="theme-toggle">🌙 Dark</button>
       </div>
+      <p class="site-description">{{ site.description }}</p>
+      <nav class="site-nav">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <span class="nav-divider">/</span>
+        <a href="{{ '/archive' | relative_url }}">Archive</a>
+        <span class="nav-divider">/</span>
+        <a href="{{ '/about' | relative_url }}">About</a>
+      </nav>
     </header>
 
     <main>
