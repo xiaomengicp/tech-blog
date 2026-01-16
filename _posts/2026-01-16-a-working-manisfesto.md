@@ -7,6 +7,10 @@ tags:
   - psychoanalysis
 published: true
 ---
+Technology matters not only because of what it makes possible, but because of what it asks us to hold, to refuse, and to return to.
+
+<!--more-->
+
 I only began working consistently with AI-assisted programming after 2026. What caught me off guard wasn’t how much faster things became, but how quickly the work started to feel heavier in a different way. There’s a quiet assumption circulating right now—rarely stated outright—that because AI systems don’t seem to have obvious limits, our work should begin to resemble that limitlessness as well. But whatever AI can do, we remain embodied. We still get tired. Our attention frays. Our bodies register cost long before our tools do. The fact that something can now be done doesn’t automatically mean it needs to be done, or done immediately, or done by us at all.
 
 It took me some time to notice that “low cost” doesn’t mean “no cost.” Time, emotional bandwidth, and the ability to stay oriented toward a longer process are still being spent, even when the interaction feels frictionless. In practice, AI didn’t simply expand my capacity; it made its edges more visible. It kept pushing me back toward a question that existed long before these tools did: what was I actually trying to do in the first place? That question doesn’t disappear when new technology arrives. If anything, it becomes easier to bypass. AI doesn’t generate intention. It amplifies movement once intention is already there—and sometimes it amplifies movement that shouldn’t have been happening to begin with.
