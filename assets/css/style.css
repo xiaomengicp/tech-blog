@@ -353,21 +353,12 @@ li {
   border-radius: 3px;
   font-size: 0.75rem;
   transition: all 0.2s ease;
-  cursor: pointer;
-  border: 1px solid transparent;
 }
 
 .post-tag:hover {
   background: var(--accent);
   color: white;
   border-bottom: none;
-}
-
-.post-tag.active {
-  background: var(--accent);
-  color: white;
-  border-color: var(--accent);
-  font-weight: 600;
 }
 
 .post-title-link {
