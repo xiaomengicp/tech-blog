@@ -5,6 +5,7 @@ tags:
   - Game
   - Art
   - Pipeline
+  - AI
 published: true
 excerpt: I wanted to understand the art pipeline—how do you actually create all those beautiful scenes, the characters, the interactive elements?
 ---
