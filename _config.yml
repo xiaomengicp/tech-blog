@@ -45,3 +45,4 @@ defaults:
       layout: "post"
       published: false  # 默认为草稿，需要显式设置 published: true
       excerpt: ""  # 默认不生成摘要
+      future: true
