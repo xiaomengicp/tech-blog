@@ -1,7 +1,11 @@
 ---
 title: Understanding the Spectrum of Procedural Generation in Game Art
 date: 2026-01-16
-tags: [Game, Art, Pipeline, AI]
+tags:
+  - game
+  - art
+  - pipeline
+  - AI
 published: true
 excerpt: I wanted to understand the art pipeline.
 ---
