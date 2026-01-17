@@ -3,7 +3,7 @@ title: Understanding the Spectrum of Procedural Generation in Game Art
 date: 2026-01-17
 tags: [Game, Art, Pipeline, AI]
 published: true
-excerpt: I wanted to understand the art pipeline—how do you actually create all those beautiful scenes, the characters, the interactive elements?
+excerpt: I wanted to understand the art pipeline.
 ---
 For the longest time, I carried a fundamental misunderstanding about game development: I thought everything visual in a game needed to be drawn or modeled by hand. When I saw a beautiful indie game like Florence or Gris, I assumed every scene, every UI element, every particle effect was painstakingly created by an artist. This misconception kept me from fully understanding what was actually possible when building games, especially as a solo developer.
 
